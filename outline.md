@@ -36,19 +36,19 @@ Using AGT a compilation framework for gradually typed languages could be develop
 
 * The execution of gradually typed languages presents a performance challenge
 
-* A compiler that allows for efficient execution of languages derived from AGT would be useful
+* A compiler that allows for the efficient execution of languages derived from AGT would be useful
 
-* Current approaches for compiling gradually typed languages are designed in an ad-hoc way to a specific typing discipline, thus a compiler for languages derived from AGT would be more flexible
+* Current approaches for compiling gradually typed languages are designed in an ad-hoc way for a specific typing discipline, thus a compiler for languages derived from AGT would be more flexible
 
 * In order to design a compiler of efficient programs, tags could be used to represent evidence, similarly to Tag-based Policy Enforcement
 
 ## Hypothesis
 
-* A systematic approach for building compilers for programming languages designed with AGT can be developed that allows for efficient execution of evidence-based dynamic semantics
+* A systematic approach for building compilers for programming languages designed with AGT can be developed that allows for the efficient execution of evidence-based dynamic semantics
 
 ## Objectives
 
-* Develop a systematic approach for building compilers for programming languages designed with AGT that allows for efficient execution of evidence-based dynamic semantics
+* Develop a systematic approach for building compilers for programming languages designed with AGT that allows for the efficient execution of evidence-based dynamic semantics
 
   * Develop a systematic approach for building compilers for programming languages designed with AGT
 
@@ -58,7 +58,28 @@ Using AGT a compilation framework for gradually typed languages could be develop
 
 ## Methodology
 
+1. Study the state of the art in gradual typing disciplines, the compilation of gradually typed programming languages, and applicable compilation techniques
+
+2. Implement a simple compiler for a gradual typing discipline derived from AGT
+
+3. Implement a compiler that can be used for multiple gradual typing disciplines derived from AGT
+
+4. Implement optimization techniques in the compiler that reduce the performance impact of runtime checks
+
+5. Study the performance overhead of runtime checks
+
+6. Compare to existing compilers
+
 ## Expected Results
+
+* A flexible compiler for gradual typing disciplines derived from AGT.
+
+* A better understanding of the performance overhead of runtime checks and the effectivity of certain compiler optimizations to mitigate it.
 
 ## Contributions
 
+* A compiler for gradual typing disciplines derived from AGT.
+
+* Data about the performance overhead of runtime checks.
+
+* Data about the effectivity of the used optimizations at mitigating the performance overhead.
