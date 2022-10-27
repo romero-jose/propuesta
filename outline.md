@@ -2,15 +2,17 @@
 
 ## Introduction
 
-Programming languages are usually statically typed or dynamically typed, each of these typing paradigms having their advantages and disadvantages. Gradually typed languages aim to allow static typing and dynamic typing to coexist in the same programming languages, thus getting the advantages of both typing disciplines. Furthermore, different aspects of a type system can be gradualized, such as security types, structural types, etc.
+Programming languages are usually statically typed or dynamically typed, each of these typing paradigms having its advantages and disadvantages. Gradual typing aims to allow static typing and dynamic typing to coexist in the same programming language. Getting the advantage of the guarantees provided by static typing and the flexibility of dynamic typing. Also, allowing a program with no type annotations to evolve into a statically typed version by adding type annotations.
 
-One of the challenges of gradual typing disciplines is that implementations of these languages require runtime type checking to enforce the type guarantees that can't be statically checked. This imposes a performance penalty that can dissuade users from enabling the runtime checks.
+Many gradual type disciplines have been developed, such as subtyping, inference, information flow security, references, etc. However, most of these developments have been ad-hoc to the specific typing discipline.
+
+Abstracting Gradual Typing (AGT) introduces a systematic approach for designing gradual typing disciplines from a static typing discipline. Given a source language and a designer-selected interpretation for gradual types, AGT yields static and dynamic semantics grounded in the type discipline of the source language.
+
+One of the challenges of gradual typing disciplines is that language implementations require runtime type checking in addition to static type checking. This imposes a runtime performance penalty that can dissuade users from enabling runtime checks.
 
 Compilers for gradually typed languages have been developed to mitigate these performance issues, but they have been designed ad-hoc to the specific language.
 
-AGT introduces a systematic approach for designing gradually typed languages. Given a source language and a designer-selected interpretation for gradual types, AGT yields static and dynamic semantics grounded in the type discipline of the source language.
-
-Using AGT a compilation framework for gradually typed languages could be developed that is not designed ad-hoc to the specific language, but can be applied to several gradually-typed languages.
+Using AGT a compilation framework for gradually typed languages could be developed that is not designed ad-hoc to the specific language, but can be applied to several gradual typing disciplines. This would be more flexible than the existing approaches that rely on the specific typing discipline. Additionally, this approach could be applied to all the gradual typing disciplines developed using AGT.
 
 ## State of the Art
 
@@ -53,7 +55,7 @@ Using AGT a compilation framework for gradually typed languages could be develop
   * Develop an approach for compiling evidence-based semantics to efficient machine code
 
   * Evaluate the performance of the programs compiled with this compiler and compare it with the performance of programs compiled with existing compilers for gradual typing disciplines
- 
+
 ## Methodology
 
 ## Expected Results
