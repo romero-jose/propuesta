@@ -24,6 +24,15 @@ A flexible approach for building compilers for gradual typing disciplines derive
 
 * Efficient Gradual Typing
 
+* Toward Efficient Gradual Typing
+for Structural Types via Coercions (grift)
+
+* Abstracting Gradual References
+
+* Gradual System F
+
+* A Gradual Interpretation of Union Types
+
 ## Problem
 
 * Gradual typing has advantages
@@ -80,8 +89,6 @@ Develop a flexible approach for building compilers for gradual typing discipline
 
 * An approach for building compilers for typing disciplines derived from AGT
 
-* Compilers for some typing disciplines derived from AGT
-
-* A memory representation for the evidence used in typing disciplines derived from AGT
+* A compact memory representation for the evidence used in gradual typing disciplines derived from AGT
 
 * A better understanding of how this approach compares to existing compilers and interpreters for gradual typing
